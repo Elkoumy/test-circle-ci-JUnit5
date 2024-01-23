@@ -17,7 +17,7 @@ class PetTypeFormatterTest {
         Person person = new Person(1l, "FirstName", "LastName");
         //both the below tests will run, even if the first one fails.
         assertAll("Test Props Set",
-            () -> assertEquals("FirstName1", person.getFirstName(),
+            () -> assertEquals("FirstName", person.getFirstName(),
                 "You can write a custom message here."),
             () -> assertEquals("LastName", person.getLastName()));
     }
